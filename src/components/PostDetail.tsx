@@ -22,7 +22,10 @@ const PostDetail: React.FC<PostDetailProps> = ({ post, onDelete }) => {
   return (
     <div>
       <h1>{post.title}</h1>
-      <img src={post.thumbnail} alt={post.title} />
+      <img
+        src={post.thumbnail || "https://via.placeholder.com/300"}
+        alt={post.title}
+      />
       <p>
         <strong>Tác giả:</strong> {post.author}
       </p>

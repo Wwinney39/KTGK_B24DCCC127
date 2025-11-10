@@ -1,10 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useNavigate,
-  useParams,
-} from "react-router-dom";
+import { Routes, Route, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { Post } from "./types";
 import Navbar from "./components/Navbar";
@@ -61,7 +55,8 @@ const App: React.FC = () => {
       id: "1",
       title: "Hướng dẫn lập trình React cơ bản",
       author: "Nguyễn Văn A",
-      thumbnail: "https://via.placeholder.com/300",
+      thumbnail:
+        "https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=600",
       content:
         "React là một thư viện JavaScript phổ biến cho việc xây dựng giao diện người dùng. Trong bài viết này, chúng ta sẽ tìm hiểu cách bắt đầu với React, từ cài đặt đến tạo component đầu tiên. React sử dụng JSX để viết mã, giúp code dễ đọc hơn. Chúng ta cũng sẽ khám phá state và props, hai khái niệm cốt lõi. Cuối cùng, bài viết sẽ hướng dẫn tích hợp React Router để điều hướng giữa các trang.",
       category: "Công nghệ",
@@ -71,7 +66,8 @@ const App: React.FC = () => {
       id: "2",
       title: "Khám phá du lịch Đà Nẵng",
       author: "Trần Thị B",
-      thumbnail: "https://via.placeholder.com/300",
+      thumbnail:
+        "https://ik.imagekit.io/tvlk/blog/2025/05/canh-dep-da-nang-cover.png?tr=q-70,c-at_max,w-500,h-250,dpr-2",
       content:
         "Đà Nẵng là một thành phố ven biển tuyệt đẹp ở Việt Nam. Bài viết này sẽ đưa bạn qua các điểm đến nổi tiếng như cầu Rồng, núi Ngũ Hành Sơn và bãi biển Mỹ Khê. Chúng ta sẽ thảo luận về ẩm thực địa phương, các hoạt động vui chơi và mẹo du lịch tiết kiệm. Đà Nẵng cũng là điểm khởi đầu lý tưởng để khám phá Hội An và Bà Nà Hills.",
       category: "Du lịch",
@@ -81,7 +77,8 @@ const App: React.FC = () => {
       id: "3",
       title: "Công thức nấu ăn món phở bò",
       author: "Lê Văn C",
-      thumbnail: "https://via.placeholder.com/300",
+      thumbnail:
+        "https://cdn.eva.vn/upload/3-2023/images/2023-07-13/cach-nau-pho-bo-ha-noi-thom-ngon-chuan-vi-tai-nha-cuc-don-gian-14-1689214964-384-width700height482.jpg",
       content:
         "Phở bò là món ăn truyền thống của Việt Nam. Bài viết này sẽ hướng dẫn chi tiết cách nấu phở từ việc chuẩn bị nguyên liệu đến cách trình bày. Bạn sẽ học cách ninh xương, làm nước dùng thơm ngon và chọn thịt bò tươi. Ngoài ra, chúng ta sẽ khám phá các biến tấu của phở và cách phục vụ để có bữa ăn hoàn hảo.",
       category: "Ẩm thực",
@@ -91,7 +88,8 @@ const App: React.FC = () => {
       id: "4",
       title: "Mẹo sống khỏe mạnh hàng ngày",
       author: "Phạm Thị D",
-      thumbnail: "https://via.placeholder.com/300",
+      thumbnail:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zHYJa-k6NnQ8EHhQi7ktrvABOVz4SdbPwA&s",
       content:
         "Sống khỏe mạnh không khó nếu bạn áp dụng đúng thói quen. Bài viết này chia sẻ các mẹo như ăn uống cân bằng, tập thể dục đều đặn và quản lý stress. Chúng ta sẽ thảo luận về tầm quan trọng của giấc ngủ và cách duy trì cân nặng hợp lý. Cuối cùng, bài viết khuyến khích xây dựng lối sống tích cực để cải thiện sức khỏe tổng thể.",
       category: "Đời sống",
@@ -99,9 +97,10 @@ const App: React.FC = () => {
     },
     {
       id: "5",
-      title: "Xu hướng công nghệ 2023",
+      title: "Xu hướng công nghệ 2025",
       author: "Hoàng Văn E",
-      thumbnail: "https://via.placeholder.com/300",
+      thumbnail:
+        "https://media.vneconomy.vn/images/upload/2024/09/24/960x0-10.jpg",
       content:
         "Năm 2023 chứng kiến nhiều tiến bộ trong công nghệ. Bài viết này điểm qua AI, blockchain và thực tế ảo. Chúng ta sẽ phân tích tác động của chúng đến cuộc sống hàng ngày và kinh doanh. Ngoài ra, bài viết dự đoán xu hướng tương lai như metaverse và xe tự lái.",
       category: "Công nghệ",
